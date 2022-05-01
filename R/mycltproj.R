@@ -1,4 +1,4 @@
-#' Title
+#' myclt
 #'
 #' @param n Number of samples
 #' @param iter Number of iterations within each sample
