@@ -9,7 +9,7 @@
 #'
 #' @return Plots displaying the Newton-Raphson method of finding the maximum likelihood
 #'
-#' @examples myNRML(x0=1,delta=0.001,llik=function(x)log(dpois(4,x)*dpois(6,x)*dpois(7,x)*dpois(6,x)*dpois(5,x)),xrange=c(0,20),parameter="param")
+#' @examples myNRML(x0=1,delta=0.000001,llik=function(x) log(dpois(4,x)*dpois(6,x)*dpois(7,x)*dpois(6,x)*dpois(5,x)),xrange=c(0,20),parameter="lambda" )
 myNRML=function(x0,delta=0.001,llik,xrange,parameter="param"){
   f=function(x) (llik(x+delta)-llik(x))/delta
   fdash=function(x) (f(x+delta)-f(x))/delta

@@ -5,8 +5,7 @@
 #' @param x sample
 #' @param fun what function you would like to analyze i.e. mean, var, etc.
 #' @param alpha set bootstrap intervals i.e alpha = .2 = 80% interval
-#' @param cx
-#' @param ...
+#' @param cx related to plot dimensions
 #'
 #' @return Histogram of density of bootstrap sample statistics
 #'
