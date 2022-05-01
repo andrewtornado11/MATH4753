@@ -9,7 +9,6 @@
 #' @param ...
 #'
 #' @return Histogram of density of bootstrap sample statistics
-#' @export
 #'
 #' @examples myboot2(iter = 10000, x = 1000, fun = "mean", alpha = 0.05, cx = 1.5)
 myboot2<-function(iter=10000,x,fun="mean",alpha=0.05,cx=1.5,...){  #Notice where the ... is repeated in the code

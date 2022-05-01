@@ -7,7 +7,6 @@
 #' @param b Right bound of uniform distribution
 #'
 #' @return Histogram of the sums of the random samples of the uniform function
-#' @export
 #'
 #' @examples myclt(n=50,iter=10000,a=5,b=10)
 myclt=function(n,iter,a=0,b=5){

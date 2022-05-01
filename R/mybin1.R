@@ -6,7 +6,6 @@
 #' @param p Probability
 #'
 #' @return Probability of < = y
-#' @export
 #'
 #' @examples mynbin(10,3,0.6)
 mynbin=function(y,r,p){
