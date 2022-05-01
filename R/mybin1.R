@@ -43,3 +43,14 @@ myncurve = function(mu, sigma, a){
 }
 
 myncurve(4,3,9)
+
+
+#' This is data to be included in my package for Lab 7
+#'
+#' @name fire
+#' @docType data
+#' @author The Book
+#' @keywords fire
+
+fire = read.csv("/Users/amuehr/Desktop/Stats/Lab 7/FIREDAM.csv")
+
