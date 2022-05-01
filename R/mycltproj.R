@@ -1,9 +1,10 @@
-#' myclt
+#' @title myclt
+#' @description Creates a histogram of the sums of the random samples of the uniform distribtion as defined by your input
 #'
 #' @param n Number of samples
 #' @param iter Number of iterations within each sample
 #' @param a Left bound of uniform distribution
-#' @param b Right boundof uniform distribution
+#' @param b Right bound of uniform distribution
 #'
 #' @return Histogram of the sums of the random samples of the uniform function
 #' @export
@@ -18,6 +19,4 @@ myclt=function(n,iter,a=0,b=5){
   curve(dnorm(x,mean=n*(a+b)/2,sd=sqrt(n*(b-a)^2/12)),add=TRUE,lwd=2,col="Blue")
   sm
 }
-w=myclt(n=50,iter=10000,a=5,b=10)
-
 

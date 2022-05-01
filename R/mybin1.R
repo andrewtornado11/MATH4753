@@ -1,4 +1,4 @@
-#' @title mybin1
+#' @title mybin
 #' @description function for binomial calculation
 #'
 #' @param y Number of trials
@@ -8,8 +8,7 @@
 #' @return Probability of < = y
 #' @export
 #'
-#' @examples
-#' mynbin(10,3,0.6)
+#' @examples mynbin(10,3,0.6)
 mynbin=function(y,r,p){
   choose(y-1,r-1)*p^r*(1-p)^(y-r)
 }
@@ -26,8 +25,7 @@ mynbin(10,3,0.4)
 #' @return graph, area shaded in red
 #' @export
 #'
-#' @examples
-#' myncurve(4,3,9)
+#' @examples myncurve(4,3,9)
 myncurve = function(mu, sigma, a){
   curve(dnorm(x,mean=mu,sd=sigma), xlim = c(mu-3*sigma, mu + 3*sigma))
 
@@ -49,7 +47,7 @@ myncurve(4,3,9)
 #'
 #' @name fire
 #' @docType data
-#' @author The Book
+#' @author Mendenhall and Sincich: Statistics for Engineering and the Sciences, Sixth Edition
 #' @keywords fire
 
 fire = read.csv("/Users/amuehr/Desktop/Stats/Lab 7/FIREDAM.csv")

@@ -1,15 +1,16 @@
-#' myNRML
+#' @title myNRML
+#' @description Takes in your input to graphically represent the Newton-Raphson method of finding the maximum likelihood
 #'
 #' @param x0 initial value when n = 0
-#' @param delta accuracy
+#' @param delta increments, smaller delta value leads to greater accuracy
 #' @param llik likelihood
-#' @param xrange x-limit of the plot
+#' @param xrange x-limit of the plot (vector, i.e. c(0,15))
 #' @param parameter the parameter you want to find and use as the x-label
 #'
-#' @return
+#' @return Plots displaying the Newton-Raphson method of finding the maximum likelihood
 #' @export
 #'
-#' @examples
+#' @examples myNRML(x0=1,delta=0.001,llik=function(x)log(dpois(4,x)*dpois(6,x)*dpois(7,x)*dpois(6,x)*dpois(5,x)),xrange=c(0,20),parameter="param")
 myNRML=function(x0,delta=0.001,llik,xrange,parameter="param"){
   f=function(x) (llik(x+delta)-llik(x))/delta
   fdash=function(x) (f(x+delta)-f(x))/delta
