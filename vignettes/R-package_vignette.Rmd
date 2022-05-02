@@ -29,7 +29,10 @@ library(MATH4753)
 ```{r}
 MATH4753::mynbin(y = 10, r = 2, p = 0.5)
 
-# This function is the most simple of the four in the package. It performs a standard binomial probability calculation, where y is the number of trials, r is the number of successes, and p is the probability of success.
+# This function is the most simple of the four in the package. 
+#It performs a standard binomial probability calculation, 
+#where y is the number of trials, r is the number of successes, 
+#and p is the probability of success.
 
 # Use ?mynbin for more information 
 ```
@@ -40,7 +43,11 @@ MATH4753::mynbin(y = 10, r = 2, p = 0.5)
 a = MATH4753::myclt(n = 100, iter = 1000, a = 2, b = 8)
 a[1]
 
-# This function produces a histogram. n defines how many samples you wish to analyze, iter determines how many iterations the function will perform for n number of samples, while a and b determine the left and right bound of the n samples of the uniform distribution. 
+# This function produces a histogram. n defines how many 
+#samples you wish to analyze, iter determines how many 
+#iterations the function will perform for n number of samples, 
+#while a and b determine the left and right bound of the n 
+#samples of the uniform distribution. 
 
 # Use ?myclt for more information
 ```
@@ -63,7 +70,9 @@ MATH4753::myNRML(x0=1,delta=0.001,llik=function(x)log(dpois(4,x)*dpois(6,x)*dpoi
 ```{r}
 MATH4753::myboot2(iter = 1000000, x = 1000, fun = "mean", alpha = 0.05, cx = 1.5)
 
-# This function creates a density histogram of the bootstrap sample statistics. You define the function that you wish to analyze. Increasing the value of iter will result in greater "accuracy." 
+# This function creates a density histogram of the bootstrap sample 
+#statistics. You define the function that you wish to analyze. 
+#Increasing the value of iter will result in greater "accuracy." 
 
 
 # Use ?myboot2 for more information
