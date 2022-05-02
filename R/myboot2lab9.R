@@ -1,4 +1,4 @@
-#' myboot2
+#' @title myboot2
 #' @description Creates a density histogram of bootstrap sample statistics using your input
 #'
 #' @param iter how many samples you would like to create

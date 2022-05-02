@@ -1,4 +1,4 @@
-#' mynbin
+#' @title mynbin
 #' @description function for binomial calculation
 #'
 #' @param y Number of trials

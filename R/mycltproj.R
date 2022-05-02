@@ -1,4 +1,4 @@
-#' myclt
+#' @title myclt
 #' @description Creates a histogram of the sums of the random samples of the uniform distribtion as defined by your input
 #'
 #' @param n Number of samples
