@@ -1,4 +1,4 @@
-#' @title myclt
+#' myclt
 #' @description Creates a histogram of the sums of the random samples of the uniform distribtion as defined by your input
 #'
 #' @param n Number of samples
@@ -7,8 +7,8 @@
 #' @param b Right bound of uniform distribution
 #'
 #' @return Histogram of the sums of the random samples of the uniform function
+#'@export
 #'
-#' @examples myclt(n=50,iter=10000,a=5,b=10)
 myclt=function(n,iter,a=0,b=5){
   y=runif(n*iter,a,b)
   data=matrix(y,nr=n,nc=iter,byrow=TRUE)

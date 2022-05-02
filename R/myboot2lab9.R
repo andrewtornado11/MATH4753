@@ -1,4 +1,4 @@
-#' @title myboot2
+#' myboot2
 #' @description Creates a density histogram of bootstrap sample statistics using your input
 #'
 #' @param iter how many samples you would like to create
@@ -8,8 +8,8 @@
 #' @param cx related to plot dimensions
 #'
 #' @return Histogram of density of bootstrap sample statistics
+#' @export
 #'
-#' @examples myboot2(iter = 10000, x = 1000, fun = "mean", alpha = 0.05, cx = 1.5)
 myboot2<-function(iter=10000,x,fun="mean",alpha=0.05,cx=1.5,...){  #Notice where the ... is repeated in the code
   n=length(x)   #sample size
 

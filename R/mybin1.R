@@ -1,4 +1,4 @@
-#' @title mybin
+#' mynbin
 #' @description function for binomial calculation
 #'
 #' @param y Number of trials
@@ -6,8 +6,8 @@
 #' @param p Probability
 #'
 #' @return Probability of < = y
+#' @export
 #'
-#' @examples mynbin(10,3,0.6)
 mynbin=function(y,r,p){
   choose(y-1,r-1)*p^r*(1-p)^(y-r)
 }
